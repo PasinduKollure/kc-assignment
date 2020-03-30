@@ -14,12 +14,6 @@ struct RangeCoordinate{
     }
 };
 
-enum OverlapCases {
-    INSIDE,
-    PARTIAL,
-    NO_OVERLAP
-};
-
 enum AddRangeStatus {
     RANGE_NOT_FOUND,
     EXISTING_RANGE_MODIFIED,
@@ -39,6 +33,7 @@ public:
     int Add(int start, int end);
     bool Delete(int start, int end);
     std::vector<RangeCoordinate> Get(int start, int end);
+    void clear();
     void print(std::string title="");
 
 };
