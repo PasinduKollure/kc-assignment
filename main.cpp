@@ -18,5 +18,8 @@ int main() {
     rangeSet.Delete(0,60);
     rangeSet.print("Removing [0,60]");
 
+    rangeSet.Add(60, 80);
+    rangeSet.print("Adding [60,80]");
+
     return 0;
 }
