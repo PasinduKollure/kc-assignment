@@ -27,13 +27,9 @@ enum AddRangeStatus {
 };
 
 class Container {
-    std::vector<RangeCoordinate*> ranges;
+    std::vector<RangeCoordinate> ranges;
 
-    std::pair<int, RangeCoordinate*> isRangeWithin(int start, int end);
-    RangeCoordinate mergeRange(int start, int end, RangeCoordinate* range);
-    void splitRange(int start, int end, RangeCoordinate *node);
-    void deletePartial(int start, int end);
-    void addPartial(int start, int end);
+    std::pair<int, RangeCoordinate> isRangeWithin(int start, int end);
     std::pair<int, RangeCoordinate> AddHelper(int start, int end);
 
 public:
@@ -42,7 +38,7 @@ public:
 
     int Add(int start, int end);
     bool Delete(int start, int end);
-    std::vector<const RangeCoordinate*> Get(int start, int end);
-    void print();
+    std::vector<RangeCoordinate> Get(int start, int end);
+    void print(std::string title="");
 
 };
