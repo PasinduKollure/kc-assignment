@@ -1,6 +1,8 @@
 #include <vector>
 #include <iostream>
 
+#define DEBUG_INFO
+
 struct RangeCoordinate{
     int start;
     int end;
