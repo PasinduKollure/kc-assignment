@@ -10,4 +10,4 @@ $ make run; ./main > output.txt
 
 Use the Container.cpp and Container.h files to use my class
 
-Details regarding the code is on the PDF document.
+Please refer to the submitted PDF document for details regarding the code.
